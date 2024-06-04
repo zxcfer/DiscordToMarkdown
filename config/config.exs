@@ -1,17 +1,10 @@
-defmodule Discord2markdown do
-  @moduledoc """
-  Documentation for `Discord2markdown`.
-  """
+use Mix.Config
 
-  @doc """
-  Hello world.
+config :distillerydb,
+  git_repo_path: "/opt/git-repo"
 
-  ## Examples
-
-      iex> Discord2markdown.hello()
-      :world
-
-  """
+# lib/discord_bot.ex
+defmodule DiscordBot do
   use Nostrum.Consumer
   alias Nostrum.Api
 
