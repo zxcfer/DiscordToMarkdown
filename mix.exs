@@ -14,6 +14,7 @@ defmodule Discord2markdown.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
+      mod: {Discord2markdown, []},
       extra_applications: [:logger]
     ]
   end
